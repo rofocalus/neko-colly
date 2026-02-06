@@ -26,7 +26,9 @@ RUN set -eux; \
         # gst
         gstreamer1.0-plugins-base gstreamer1.0-plugins-good \
         gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly \
-        gstreamer1.0-pulseaudio gstreamer1.0-omx; \
+        gstreamer1.0-pulseaudio gstreamer1.0-omx \
+        # adding some spice
+        fish kodi fuse; \
     #
     # install libxcvt0 (not available in debian:bullseye)
     ARCH=$(dpkg --print-architecture); \
